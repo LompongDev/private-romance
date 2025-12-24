@@ -12,7 +12,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Poppins,Arial;background:#0b0e19;color:#eaeaea;line-height:1.9}
 
-/* HEADER (IMAGE BACKGROUND + TITLE TUMPUK) */
+/* HEADER (BACKGROUND IMAGE + TITLE TUMPUK) */
 header{
   background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
@@ -28,21 +28,20 @@ header a{
   border-radius:80px;text-decoration:none;font-weight:700
 }
 
-/* TOP AD (320x250 di atas artikel) */
-.ad-top{display:flex;justify-content:center;margin:26px 0}
+/* ADS */
+.ad-top,.ad-bottom,.native-ad{display:flex;justify-content:center;margin:26px 0}
 
 /* MAIN */
 main{max-width:1100px;margin:auto;padding:18px}
 article{background:#14182e;padding:44px;border-radius:26px}
 
 /* HERO IMAGE */
-.hero{
-  width:100%;border-radius:22px;margin:28px 0;
-}
+.hero{width:100%;border-radius:22px;margin:28px 0}
 
 /* GALLERY */
 .gallery{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:16px;margin:34px 0
 }
 .gallery img{width:100%;border-radius:16px}
@@ -53,9 +52,6 @@ article{background:#14182e;padding:44px;border-radius:26px}
   padding:22px;border-radius:18px;margin:34px 0
 }
 .inline-cta a{color:#e91e63;font-weight:700;text-decoration:none}
-
-/* BOTTOM AD (728x90 di bawah artikel, TENGAH) */
-.ad-bottom{display:flex;justify-content:center;margin:38px 0}
 
 /* FLOATING MENU */
 #hamburger{
@@ -80,7 +76,7 @@ article{background:#14182e;padding:44px;border-radius:26px}
   display:flex;justify-content:center;z-index:9000
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media(max-width:768px){
   article{padding:26px}
   header{padding:90px 16px}
@@ -109,11 +105,24 @@ article{background:#14182e;padding:44px;border-radius:26px}
 
 <h2>About This Private Platform</h2>
 
-<p>This page provides a limited public overview of private romance-oriented platforms created for verified adult users. Access is restricted to ensure privacy, moderation, and compliance across regions.</p>
+<p>
+This page provides a limited public overview of private romance-oriented platforms created for verified adult users.
+Access is restricted to ensure privacy, moderation, and compliance across regions. Many visitors arrive seeking
+private chat, live video calls, or exclusive live streams.
+</p>
+
+<!-- NATIVE AD #1 (SETELAH PARAGRAF PERTAMA) -->
+<div class="native-ad">
+  <script async="async" data-cfasync="false" src="https://ceaslessivorygoats.com/6748bf28fac70c9e7ed3df943678f247/invoke.js"></script>
+  <div id="container-6748bf28fac70c9e7ed3df943678f247"></div>
+</div>
 
 <img class="hero" src="assets/img/hero.jpg" alt="Private preview">
 
-<p>Visitors often arrive seeking direct interaction features such as private chat, live video calls, or exclusive live streams. For safety and quality control, full access requires verification through partner networks.</p>
+<p>
+For safety and quality control, full access requires verification through partner networks.
+Verified users may explore additional private rooms, scheduled sessions, and exclusive interactions depending on availability.
+</p>
 
 <div class="inline-cta">
   <strong>Quick Access:</strong><br>
@@ -122,7 +131,16 @@ article{background:#14182e;padding:44px;border-radius:26px}
   <a href="https://ceaslessivorygoats.com/cmrrajtu?key=76903807293ebe889e252fec003e2081">🎥 Live Stream</a>
 </div>
 
-<p>Availability of features may vary by location and time. Verified users gain access to additional private rooms, scheduled sessions, and exclusive interactions.</p>
+<p>
+Availability of features may vary by location and time. The platforms referenced here operate independently
+and may update their offerings without notice. Please proceed responsibly.
+</p>
+
+<!-- NATIVE AD #2 (TENGAH ARTIKEL) -->
+<div class="native-ad">
+  <script async="async" data-cfasync="false" src="https://ceaslessivorygoats.com/6748bf28fac70c9e7ed3df943678f247/invoke.js"></script>
+  <div id="container-6748bf28fac70c9e7ed3df943678f247"></div>
+</div>
 
 <div class="gallery">
   <img src="assets/img/girl1.jpg" alt="Preview 1">
@@ -137,7 +155,7 @@ article{background:#14182e;padding:44px;border-radius:26px}
 </article>
 </main>
 
-<!-- BOTTOM AD 728x90 -->
+<!-- BOTTOM AD 728x90 (TENGAH) -->
 <div class="ad-bottom">
   <script>
     atOptions={'key':'1ad458768f3bbb50a06fb12c02a75646','format':'iframe','height':90,'width':728,'params':{}};

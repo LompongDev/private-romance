@@ -3,73 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Romance Access</title>
-<meta name="description" content="Private romance access with verified platforms, exclusive interactions, and limited public preview.">
+<title>Private Access Platform | Restricted Digital Services</title>
+<meta name="description" content="Restricted private access platform for verified users. Secure subscription-based digital services with limited public preview.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,Arial;background:#0b0e19;color:#eaeaea;line-height:1.9}
+body{
+  font-family:Poppins,Arial;
+  background:#0b0e19;
+  color:#eaeaea;
+  line-height:1.9
+}
+
+/* NOTICE */
+.notice{
+  background:#121735;
+  color:#ff9bcf;
+  text-align:center;
+  padding:12px;
+  font-size:14px
+}
+
+/* HEADER */
 header{
-  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-  url('assets/img/header.jpg') center/cover no-repeat;
-  padding:120px 16px;text-align:center
+  background:linear-gradient(135deg,#1e255f,#3a4b9a);
+  padding:110px 16px 90px;
+  text-align:center
 }
-header h1{font-size:clamp(28px,6vw,60px);font-weight:800}
-header p{margin-top:14px;font-size:18px;color:#ffd1e8}
+header h1{
+  font-size:clamp(30px,6vw,60px);
+  font-weight:800;
+  letter-spacing:1.5px
+}
+header span{
+  display:block;
+  margin-top:14px;
+  font-size:18px;
+  font-weight:400;
+  color:#cfd6ff
+}
 header a{
-  display:inline-block;margin-top:34px;
-  padding:18px 54px;background:#ff4fa3;color:#fff;
-  border-radius:80px;text-decoration:none;font-weight:700
+  display:inline-block;
+  margin-top:36px;
+  padding:18px 56px;
+  background:#fff;
+  color:#2b3cff;
+  font-weight:800;
+  border-radius:80px;
+  text-decoration:none
 }
-.ad-top,.ad-bottom,.native-ad{display:flex;justify-content:center;margin:26px 0}
-main{max-width:1100px;margin:auto;padding:18px}
-article{background:#14182e;padding:44px;border-radius:26px}
-.hero{width:100%;border-radius:22px;margin:28px 0}
+
+/* TRUST STRIP */
+.trust{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
+  margin-top:26px;
+  font-size:13px;
+  color:#b8c6ff
+}
+
+/* ADS */
+.ad-center,.ad-top,.ad-bottom,.native-ad{
+  display:flex;
+  justify-content:center;
+  margin:32px 0
+}
+
+/* MAIN */
+main{
+  max-width:1150px;
+  margin:auto;
+  padding:22px
+}
+article{
+  background:#0f1533;
+  padding:48px;
+  border-radius:28px
+}
+h2{
+  color:#ff9bcf;
+  font-size:clamp(22px,4vw,34px)
+}
+h3{
+  margin-top:38px;
+  color:#d6dcff
+}
+p{
+  margin:18px 0;
+  color:#ddd
+}
+
+/* IMAGES */
+.hero{
+  width:100%;
+  border-radius:22px;
+  margin:32px 0;
+  filter:contrast(1.1) saturate(1.15)
+}
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;margin:34px 0
+  gap:16px;
+  margin:36px 0
 }
-.gallery img{width:100%;border-radius:16px}
-.inline-cta{
-  background:#ffe3ef;color:#000;
-  padding:22px;border-radius:18px;margin:34px 0
+.gallery img{
+  width:100%;
+  border-radius:18px;
+  filter:contrast(1.1) saturate(1.15)
 }
-.inline-cta a{color:#e91e63;font-weight:700;text-decoration:none}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,#1e255f,#3a4b9a);
+  padding:42px;
+  border-radius:26px;
+  text-align:center;
+  margin:52px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center
+}
+.cta a{
+  margin-top:22px;
+  padding:18px 54px;
+  background:#fff;
+  color:#2b3cff;
+  font-weight:800;
+  border-radius:80px;
+  text-decoration:none;
+  text-align:center
+}
+
+/* FLOAT MENU */
 #hamburger{
-  position:fixed;bottom:22px;left:18px;
-  width:56px;height:56px;border-radius:50%;
-  background:#ff4fa3;color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:26px;z-index:9999;cursor:pointer
+  position:fixed;
+  left:18px;
+  bottom:26px;
+  width:56px;
+  height:56px;
+  background:#ff4fa3;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  cursor:pointer;
+  z-index:5000
 }
 #menu{
-  position:fixed;bottom:90px;left:18px;
-  background:#14182e;padding:16px;
-  border-radius:16px;display:none;
-  flex-direction:column;gap:12px;z-index:9999
+  position:fixed;
+  left:18px;
+  bottom:96px;
+  background:#0f1533;
+  padding:16px;
+  border-radius:18px;
+  display:none;
+  flex-direction:column;
+  gap:12px;
+  z-index:5000
 }
-#menu a{color:#ff9bcf;text-decoration:none;font-weight:600}
+#menu a{
+  color:#ff9bcf;
+  text-decoration:none;
+  font-weight:600
+}
+
+/* STICKY */
 #sticky{
-  position:fixed;bottom:0;left:0;width:100%;
-  background:#0b0e19;padding:8px 0;
-  display:flex;justify-content:center;z-index:9000
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#0b0e19;
+  padding:8px 0;
+  display:flex;
+  justify-content:center;
+  z-index:4000
 }
-@media(max-width:768px){
-  article{padding:26px}
-  header{padding:90px 16px}
+
+/* MOBILE */
+@media(max-width:480px){
+  article{padding:28px}
+  .cta a{width:100%;max-width:320px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="notice">⚠️ Restricted digital services — Adults only (18+)</div>
+
 <header>
-  <h1>Private Romance Access</h1>
-  <p>Exclusive connections • Verified platforms • Limited preview</p>
-  <a href="https://ceaslessivorygoats.com/cmrrajtu?key=76903807293ebe889e252fec003e2081">Continue</a>
+  <h1>Private Access Platform
+    <span>Secure subscription-based digital services</span>
+  </h1>
+
+  <a href="https://ceaslessivorygoats.com/cmrrajtu?key=76903807293ebe889e252fec003e2081">Verify & Continue</a>
+
+  <div class="trust">
+    <div>🔒 Privacy-First Access</div>
+    <div>⚙️ Subscription Infrastructure</div>
+    <div>🌍 Global Digital Delivery</div>
+    <div>✅ Compliance Controlled</div>
+  </div>
 </header>
 
 <div class="ad-top">
@@ -79,24 +220,30 @@ article{background:#14182e;padding:44px;border-radius:26px}
   <script src="https://ceaslessivorygoats.com/e4111a68a299348cc41cce1992ba0ab2/invoke.js"></script>
 </div>
 
-<main><article>
+<main>
+<article>
 
-<h2>About This Private Platform</h2>
+<h2>Private Subscription & Access Management</h2>
 
-<p>This page provides a limited public overview of private romance-oriented platforms created for verified adult users.</p>
+<p>
+This platform operates on a restricted-access model commonly used by premium digital
+services. Public previews are intentionally limited to ensure privacy, quality control,
+and compliance with age-restricted policies.
+</p>
 
 <div class="native-ad">
   <script async data-cfasync="false" src="https://ceaslessivorygoats.com/6748bf28fac70c9e7ed3df943678f247/invoke.js"></script>
   <div id="container-6748bf28fac70c9e7ed3df943678f247"></div>
 </div>
 
-<img class="hero" src="assets/img/hero.jpg" alt="Private preview">
+<img class="hero" src="assets/img/hero.jpg" alt="Private platform preview">
 
-<p>For safety and quality control, full access requires verification through partner networks.</p>
-
-<div class="inline-cta">
-  <a href="https://ceaslessivorygoats.com/cmrrajtu?key=76903807293ebe889e252fec003e2081">🔓 Unlock Full Access</a>
-</div>
+<h3>Subscription Technology & Privacy</h3>
+<p>
+Modern subscription platforms rely on controlled access layers, encrypted session handling,
+and anonymized delivery pipelines. These systems are widely adopted across private media,
+premium communities, and mature digital networks.
+</p>
 
 <div class="native-ad">
   <script async data-cfasync="false" src="https://ceaslessivorygoats.com/9f31c2a1bde847d0a0a21b9c1f4f88aa/invoke.js"></script>
@@ -104,12 +251,19 @@ article{background:#14182e;padding:44px;border-radius:26px}
 </div>
 
 <div class="gallery">
-  <img src="assets/img/girl1.jpg">
-  <img src="assets/img/girl2.jpg">
-  <img src="assets/img/girl3.jpg">
+  <img src="assets/img/girl1.jpg" alt="Private preview">
+  <img src="assets/img/girl2.jpg" alt="Restricted content">
+  <img src="assets/img/girl3.jpg" alt="Exclusive access">
 </div>
 
-</article></main>
+<div class="cta">
+  <h3>Restricted Platform Detected</h3>
+  <p>Verification is required to continue.</p>
+  <a href="https://ceaslessivorygoats.com/cmrrajtu?key=76903807293ebe889e252fec003e2081">Continue</a>
+</div>
+
+</article>
+</main>
 
 <div class="ad-bottom">
   <script>
@@ -118,19 +272,17 @@ article{background:#14182e;padding:44px;border-radius:26px}
   <script src="https://ceaslessivorygoats.com/1ad458768f3bbb50a06fb12c02a75646/invoke.js"></script>
 </div>
 
-<footer style="text-align:center;color:#aaa;padding:26px">
-© 2025 Private Romance Access
+<footer style="text-align:center;color:#aaa;padding:28px">
+© 2025 Private Access Platform — Restricted
 </footer>
 
 <div id="hamburger" onclick="toggle()">☰</div>
 <div id="menu">
   <a href="#">WhatsApp</a>
-  <a href="#">Video Call</a>
-  <a href="#">Live Stream</a>
-  <a href="#">Contact</a>
+  <a href="#">Private Access</a>
+  <a href="#">Subscription</a>
 </div>
 
-<!-- ✅ POPUNDER FINAL (SATU, STABIL) -->
 <div id="sticky">
   <script src="https://ceaslessivorygoats.com/ec/9e/9a/ec9e9a7a36624504f271f1034de8f422.js"></script>
 </div>
@@ -143,4 +295,4 @@ function toggle(){
 </script>
 
 </body>
-</html>
+  </html>
